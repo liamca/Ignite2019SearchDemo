@@ -4,8 +4,6 @@
 
 ```
 {
-    "@odata.context": "https://liamca-ignite.search.windows.net/$metadata#indexes/$entity",
-    "@odata.etag": "\"0x8D763C6C7D7EC42\"",
     "name": "hotels",
     "defaultScoringProfile": "",
     "fields": [
