@@ -250,3 +250,17 @@ RESPONSE:
     ]
 }
 ```
+
+## Interesting Queries
+
+### Geo Distance (Hotels near center of NY City)
+https://[searchservice].search.windows.net/indexes/ignite-phonetic/docs?api-version=2019-05-06&search=*&$filter=geo.distance(GeoLocation,geography'POINT(-74.006577+40.710148)')+le+5
+
+### Geo Intersection (Polygon of Seattle area)
+```
+GET: https://[searchservice].search.windows.net/indexes/ignite-phonetic/docs?api-version=2019-05-06&search=*&$filter=geo.intersects(GeoLocation, geography'POLYGON((-122.442571+47.732029, 
+-122.035530+47.739885,
+-121.936506+47.491295,
+-122.437708+47.532723,
+-122.442571+47.732029))')
+```
