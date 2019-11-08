@@ -253,8 +253,10 @@ RESPONSE:
 
 ## Interesting Queries
 
-### Geo Distance (Hotels near center of NY City)
+### Geo Distance (Hotels within 5 KM of center of NY City)
+```
 https://[searchservice].search.windows.net/indexes/ignite-phonetic/docs?api-version=2019-05-06&search=*&$filter=geo.distance(GeoLocation,geography'POINT(-74.006577+40.710148)')+le+5
+```
 
 ### Geo Intersection (Polygon of Seattle area)
 ```
